@@ -1,0 +1,72 @@
+.container {
+	/* height: 100em; */
+	margin-top: 11rem;
+}
+
+#content {
+	text-align: center;
+	background-color: rgb(245, 245, 245, 0.7);
+	/* background-color: #ebd6f7; */
+	padding: 110px 1rem;
+	font-weight: 400;
+	font-size: 1.75rem;
+}
+
+picture {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 80px;
+}
+
+img.logo {
+	box-shadow: 15px 16px 25px rgba(0, 0, 0, 0.5);
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 25px;
+}
+
+ul.socials {
+	display: flex;
+	flex-direction: row;
+	gap: 1.2rem;
+	justify-content: center;
+}
+
+.btn {
+	display: inline-block;
+	background-color: white;
+	padding: 10px 0;
+	cursor: pointer;
+	max-width: 33rem;
+	width: 90%;
+	max-height: 5rem;
+	height: 3rem;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	margin: 0.75rem 0;
+	transition: transform 0.2s ease-out 0.1s;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1rem;
+	align-items: center;
+}
+
+.btn:hover {
+	transform: scale(101%);
+	box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.2);
+	background-color: rgb(18, 18, 18);
+	color: white;
+}
+
+/* a.btn {
+	
+	width: 100%;
+} */
+
+.btn-group {
+	margin: 1.95rem auto;
+	width: auto;
+}

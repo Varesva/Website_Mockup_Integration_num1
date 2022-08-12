@@ -1,0 +1,26 @@
+header {
+	transition: transform 0.15s;
+	position: fixed;
+	top: 0;
+	padding: 1rem;
+	height: var(--nav-height);
+	z-index: 2;
+}
+
+/* AJOUTER UN EASE IN OUT TRANSITION PLUS SMOOTH */
+
+.hide-header {
+	transform: translateY(calc(-1 * var(--nav-height)));
+}
+
+header > .nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-title {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+}
