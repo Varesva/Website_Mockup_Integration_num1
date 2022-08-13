@@ -31,8 +31,12 @@ img.logo {
 ul.socials {
 	display: flex;
 	flex-direction: row;
-	gap: 1.2rem;
+	gap: 1.5rem;
 	justify-content: center;
+}
+
+ul.socials li:hover {
+	color: #6551fe;
 }
 
 .btn {
@@ -68,5 +72,8 @@ ul.socials {
 
 .btn-group {
 	margin: 1.95rem auto;
-	width: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
 }

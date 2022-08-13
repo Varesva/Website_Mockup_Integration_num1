@@ -19,8 +19,45 @@ header > .nav {
 	justify-content: space-between;
 }
 
+header nav ul.nav-items {
+	display: flex;
+	flex-direction: row;
+	gap: 2.5rem;
+}
+
 .nav-title {
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 0.1em;
+}
+
+/* BURGER MENU VISIBILITY */
+.d-sm-block {
+	display: block;
+}
+
+.d-md-block, .d-lg-block, .d-xl-block {
+	display: none;
+}
+
+@media screen and (min-width: 425px) {
+	.d-sm-block {
+		display: none;
+	}
+
+	.d-md-block {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.d-lg-block {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.d-xl-block {
+		display: block;
+	}
 }

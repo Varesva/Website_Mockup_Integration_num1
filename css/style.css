@@ -23,9 +23,11 @@ body {
 	font-weight: 600;
 	min-height: 100vh;
 	line-height: 2rem;
-	/* font-size: 100%; 16px */
+	font-size: 100%; /* 16px */
 	background-image: url("../img/colored-7292420_1920.jpg");
-	background-size: cover no-repeat ;
+	background-size: cover ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-position: top;
 }
 
@@ -99,4 +101,9 @@ small,
 
 .bolder {
 	font-weight: 700;
+}
+
+.d-flex {
+	display: flex;
+	flex-direction: row;
 }
