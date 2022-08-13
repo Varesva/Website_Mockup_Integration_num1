@@ -2,7 +2,7 @@ header {
 	transition: transform 0.15s;
 	position: fixed;
 	top: 0;
-	height: var(--nav-height);
+	height: calc(2 + var(--nav-height));
 	z-index: 2;
 	display: flex;
 	align-items: center;
@@ -12,7 +12,7 @@ header {
 /* AJOUTER UN EASE IN OUT TRANSITION PLUS SMOOTH */
 
 .hide-header {
-	transform: translateY(calc(-1 * var(--nav-height)));
+	transform: translateY(calc(-2 * var(--nav-height)));
 }
 
 header nav ul.nav-items {
@@ -25,6 +25,7 @@ header nav ul.nav-items {
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 0.1em;
+	font-size: 0.875rem;
 }
 
 /* BURGER MENU VISIBILITY */
@@ -32,7 +33,9 @@ header nav ul.nav-items {
 	display: block;
 }
 
-.d-md-block, .d-lg-block, .d-xl-block {
+.d-md-block,
+.d-lg-block,
+.d-xl-block {
 	display: none;
 }
 
@@ -44,6 +47,10 @@ header nav ul.nav-items {
 	.d-md-block {
 		display: block;
 	}
+
+	.nav-title {
+		font-size: inherit;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -53,6 +60,10 @@ header nav ul.nav-items {
 
 	.d-lg-flex {
 		display: flex;
+	}
+
+	.w-lg-50 {
+		width: 50%;
 	}
 }
 

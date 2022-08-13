@@ -21,18 +21,12 @@ body {
 	scroll-behavior: smooth;
 	color: #000000;
 	font-weight: 600;
-	min-height: 100vh;
-	line-height: 2rem;
-	font-size: 100%; /* 16px */
+	height: 100%;
 	background-image: url("../img/colored-7292420_1920.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: top;
-}
-
-main,
-#main {
+	/* background-position: top; */
 	--nav-height: 3rem;
 }
 
@@ -42,7 +36,7 @@ p,
 }
 
 p:not(header p) {
-	margin-bottom: 1.18rem;
+	margin-bottom: 0.75rem;
 }
 
 li {
@@ -54,12 +48,16 @@ a {
 	text-decoration: none;
 }
 
+a:hover, .nav li:hover {
+	transform: scale(1.015rem);
+	font-weight: 700;
+	color: #6551fe;
+}
+
 h1,
 h2,
 h3,
-.h3,
 h4,
-.h4,
 h5 {
 	margin: 3rem 0 1.38rem;
 	font-weight: 500;
@@ -67,28 +65,28 @@ h5 {
 }
 
 h1 {
-	margin-top: 0;
-	font-size: 2rem;
+	margin: 0 0 0.75rem;
+	font-size: 2.6rem;
 }
 
-h2 {
+h2,
+.h2 {
 	font-size: 2.441rem;
 }
 
 h3,
 .h3 {
-	font-size: 1.953rem;
+	font-size: 1.853rem;
 }
 
 h4,
-.h4,
-.p-large {
+.h4 {
 	font-size: 1.563rem;
 }
 
 h5,
-.p-md {
-	font-size: 1.25rem;
+.h5 {
+	font-size: 1.45rem;
 }
 
 small,
@@ -101,7 +99,7 @@ small,
 }
 
 .bolder {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .d-flex {
@@ -109,15 +107,22 @@ small,
 	flex-direction: row;
 }
 
-.w-50 {
-	width: 50%;
-}
-
 .flex-end {
 	display: flex;
 	justify-content: flex-end;
 }
 
-.p-1 {
+.p-1plus {
 	padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 3rem;
+		letter-spacing: 3px;
+	}
+
+	.p-1plus {
+		padding: 1.75rem;
+	}
 }

@@ -1,6 +1,7 @@
 #container,
-#container-xl {
+#container-global {
 	margin-top: 11rem;
+	min-height: 100vh;
 }
 
 #content {
@@ -33,10 +34,7 @@ ul.socials {
 	flex-direction: row;
 	gap: 1.5rem;
 	justify-content: center;
-}
-
-ul.socials li:hover {
-	color: #6551fe;
+	margin: 1.38rem 0 1.38rem;
 }
 
 .btn {
@@ -44,7 +42,8 @@ ul.socials li:hover {
 	background-color: white;
 	padding: 10px 0;
 	cursor: pointer;
-	max-width: 33rem;
+	max-width: 25rem;
+	min-width: 17rem;
 	width: 90%;
 	max-height: 5rem;
 	height: 3rem;
@@ -61,21 +60,18 @@ ul.socials li:hover {
 .btn:hover {
 	transform: scale(101%);
 	box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.2);
-	background-color: rgb(18, 18, 18);
+	background-color: #6551fe;
+	/* background-color: rgb(18, 18, 18); */
 	color: white;
 }
 
-/* a.btn {
-	
-	width: 100%;
-} */
-
 .btn-group {
-	margin: 1.95rem auto;
+	margin: 1.95rem auto 0;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	align-items: center;
+	text-align: center;
 }
 /* RESPONSIVE TABLET */
 @media screen and (min-width: 768px) {
@@ -83,44 +79,64 @@ ul.socials li:hover {
 		display: none;
 	}
 
-	#container, .bg-container {
-		margin-top: initial;
+	#container {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	#container,
+	.bg-container {
+		margin-top: 0;
 		background-color: rgb(245, 245, 245);
+	}
+
+	#container-global {
+		display: flex;
+		flex-direction: row;
+		margin-top: 0;
+		align-items: center;
+	}
+
+	#container-xl,
+	#container {
+		max-width: 50%;
+		width: 50%;
+		padding: 0 1rem;
+	}
+
+	#content {
+		padding: 0 1.75rem;
+		align-items: center;
 	}
 
 	#container-xl {
 		display: flex;
-		flex-direction: row;
-		margin-top: inherit;
-	}
-
-	#main-xl,
-	#container {
-		max-width: 50%;
-		width: 50%;
-	}
-
-	#main-xl {
-		display: flex;
 		justify-content: center;
-		/* padding: 110px 1rem; */
 	}
 
 	#img-container-xl {
-		display: inline-block;
-		top: initial;
+		display: flex;
 		position: relative;
+		max-width: 25rem;
+		max-height: 25rem;
+		margin: 0 3rem;
 	}
 
-	#img-container-xl,
+	#container-xl picture {
+		top: 5%;
+	}
+
 	#img-container-xl img.logo {
-		min-width: 70%;
-		max-width: 30rem;
+		width: 100%;
 		height: auto;
-		max-height: 80%;
 	}
 
 	#header {
 		position: relative;
+	}
+
+	#footer {
+		padding: 0;
 	}
 }
