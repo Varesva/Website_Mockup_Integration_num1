@@ -4,7 +4,7 @@ let yearCopyright = dateCopyright.getFullYear();
 document.getElementById("year").innerHTML = yearCopyright;
 
 // SHOW MENU ON SCROLL
-const menuHeader = document.getElementById('headerScroll');
+const menuHeader = document.getElementById('header');
 
 // declare + initialize
 let lastScroll = window.scrollY;

@@ -1,5 +1,5 @@
-.container {
-	/* height: 100em; */
+#container,
+#container-xl {
 	margin-top: 11rem;
 }
 
@@ -76,4 +76,51 @@ ul.socials li:hover {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	align-items: center;
+}
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 768px) {
+	#img-container {
+		display: none;
+	}
+
+	#container, .bg-container {
+		margin-top: initial;
+		background-color: rgb(245, 245, 245);
+	}
+
+	#container-xl {
+		display: flex;
+		flex-direction: row;
+		margin-top: inherit;
+	}
+
+	#main-xl,
+	#container {
+		max-width: 50%;
+		width: 50%;
+	}
+
+	#main-xl {
+		display: flex;
+		justify-content: center;
+		/* padding: 110px 1rem; */
+	}
+
+	#img-container-xl {
+		display: inline-block;
+		top: initial;
+		position: relative;
+	}
+
+	#img-container-xl,
+	#img-container-xl img.logo {
+		min-width: 70%;
+		max-width: 30rem;
+		height: auto;
+		max-height: 80%;
+	}
+
+	#header {
+		position: relative;
+	}
 }

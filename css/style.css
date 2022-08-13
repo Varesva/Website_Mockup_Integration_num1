@@ -25,13 +25,14 @@ body {
 	line-height: 2rem;
 	font-size: 100%; /* 16px */
 	background-image: url("../img/colored-7292420_1920.jpg");
-	background-size: cover ;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: top;
 }
 
-main {
+main,
+#main {
 	--nav-height: 3rem;
 }
 
@@ -106,4 +107,17 @@ small,
 .d-flex {
 	display: flex;
 	flex-direction: row;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.p-1 {
+	padding: 1rem;
 }

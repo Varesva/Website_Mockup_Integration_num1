@@ -2,21 +2,17 @@ header {
 	transition: transform 0.15s;
 	position: fixed;
 	top: 0;
-	padding: 1rem;
 	height: var(--nav-height);
 	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 /* AJOUTER UN EASE IN OUT TRANSITION PLUS SMOOTH */
 
 .hide-header {
 	transform: translateY(calc(-1 * var(--nav-height)));
-}
-
-header > .nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 header nav ul.nav-items {
@@ -53,6 +49,10 @@ header nav ul.nav-items {
 @media screen and (min-width: 768px) {
 	.d-lg-block {
 		display: block;
+	}
+
+	.d-lg-flex {
+		display: flex;
 	}
 }
 
