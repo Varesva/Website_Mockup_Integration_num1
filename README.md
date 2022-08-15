@@ -35,7 +35,14 @@ Du 12/08/2022 au 15/08/2022
 
 * Assurer une compatibilité du site avec les dernières versions des navigateurs web Chrome et Firefox
 
-**Aperçu**
+### Aperçu
+**Aperçus maquette**
+[Version Desktop](./img/ref_templates/desktop-template.png)
+[Version Mobile](./img/ref_templates/smartphone-template.png)
+
+**Aperçus du site**
+[Multi - Responsive](./img/ref_templates/live-check.png)
+[Vérification Google Search Console](./img/ref_templates/responsive-check.png)
 
 
 ## Outils
@@ -48,5 +55,8 @@ Du 12/08/2022 au 15/08/2022
 
 
 ### Crédits
-Modèle maquette : [Wix.com](https://fr.wix.com/)
+- Modèle maquette : [Wix.com](https://fr.wix.com/)
+- [AmIResponsive](https://ui.dev/amiresponsive)
+- [Google Search Console](https://search.google.com/test/mobile-friendly)
+- [Cloudfare](https://www.cloudflare.com)
 
