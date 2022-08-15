@@ -9,14 +9,14 @@ Projet personnel : Exercice d'intégration HTML n°1.
 
 3. Outils
 
-4. Crédits
+4. Apercus
 
-  
+5. Crédits
 
 ## Description
 Ce projet est un exemple de site portfolio réalisé à titre d'entraînement.
 
-> Retrouvez le projet en ligne à l'adresse suivante : [lien portfolio web](varesva-portfolio1-integration.leroots.fr)
+> Retrouvez le projet en ligne à l'adresse suivante : [lien portfolio web](varesva-portfolio1-integration.pages.dev)
   
 **Durée de réalisation**
 Du 12/08/2022 au 15/08/2022
@@ -35,7 +35,7 @@ Du 12/08/2022 au 15/08/2022
 
 * Assurer une compatibilité du site avec les dernières versions des navigateurs web Chrome et Firefox
 
-### Aperçu
+### Aperçus
 #### Aperçus maquette
 * Version Desktop
 ![Multi - Responsive](./img/ref_templates/desktop-template.png)
@@ -45,9 +45,6 @@ Du 12/08/2022 au 15/08/2022
 
 #### Aperçus du site
 ![Multi - Responsive](./img/ref_templates/live-check.png)
-
-* Vérification Google Search Console
-<img src="./img/ref_templates/responsive-check.png" width=600 height=auto>
 
 ## Outils
 
