@@ -41,14 +41,13 @@ Du 12/08/2022 au 15/08/2022
 ![Multi - Responsive](./img/ref_templates/desktop-template.png)
 
 * Version Mobile
-<img src="./img/ref_templates/smartphone-template.png" width=600 height=300>
-
+![Version Mobile](./img/ref_templates/smartphone-template.png)
 
 #### Aperçus du site
 ![Multi - Responsive](./img/ref_templates/live-check.png)
 
 * Vérification Google Search Console
-<img src="./img/ref_templates/responsive-check.png" width=600 height=300>
+<img src="./img/ref_templates/responsive-check.png" width=600 height=auto>
 
 ## Outils
 
