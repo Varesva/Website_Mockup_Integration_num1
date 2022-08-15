@@ -16,7 +16,7 @@ Projet personnel : Exercice d'intégration HTML n°1.
 ## Description
 Ce projet est un exemple de site portfolio réalisé à titre d'entraînement.
 
-> Retrouvez le projet en ligne à l'adresse suivante : varesva-portfolio1-integration.pages.dev
+> Retrouvez le projet en ligne à l'adresse suivante : [lien du portfolio web](varesva-portfolio1-integration.pages.dev)
   
 **Durée de réalisation**
 Du 12/08/2022 au 15/08/2022
