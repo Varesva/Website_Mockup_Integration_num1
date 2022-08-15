@@ -7,8 +7,7 @@ document.getElementById("year").innerHTML = yearCopyright;
 const mediaQuery = window.matchMedia("(max-width: 768px)");
 const menuHeader = document.getElementById("header");
 
-// declare + initialize
-let lastScroll = window.scrollY;
+let lastScroll = window.scrollY;    // declare + initialize
 // console.log(menuHeader);
 window.addEventListener("scroll", function () {
     if (lastScroll < this.window.scrollY && mediaQuery.matches) {
@@ -20,3 +19,12 @@ window.addEventListener("scroll", function () {
     lastScroll = this.window.scrollY;
 });
 
+// OFFCANVAS MENU
+const menu = document.getElementById("offcanvasMenu");
+function openOffcanvasMenu() {
+    menu.style.width = "100vw";
+};
+
+function closeMenu() {
+    menu.style.width = "0";
+};

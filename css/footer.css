@@ -3,22 +3,24 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	word-break: keep-all;
 	line-height: 2rem;
-}
-
-.copyright {
-	text-align: center;
 	font-weight: 500;
 	font-size: 0.955rem;
+	margin-top: 3rem;
 }
 
 footer a {
-	color: inherit;
 	text-decoration: underline;
-	transition: ease-out 0.5ms;
 }
 
-footer li {
-	list-style-type: none;
+.copyright {
+	flex-wrap: wrap;
+	margin-bottom: 0;
+}
+
+@media screen and (min-width: 425px) {
+	.copyright {
+		flex-direction: inherit;
+	}
 }

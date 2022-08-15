@@ -6,21 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Justine 'Varesva' TAVARES VAZ" />
         <!-- FAVICON -->
-        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="./favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="./favicon/favicon-16x16.png">
         <link rel="manifest" href="./favicon/site.webmanifest">
-        <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg"
+            color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
         <!-- METADESC -->
-        <meta name="description" content="Idée n°1 de portfolio personnel/CV - Varesva "/>		
-        <meta name="keywords" content="HTML, CSS, JavaScript, CV web, portfolio, création"/>
+        <meta name="description" content="Idée n°1 de portfolio personnel/CV -
+            Varesva "/>
+        <meta name="keywords" content="HTML, CSS, JavaScript, CV web, portfolio,
+            création"/>
         <!-- CSS -->
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/home.css" />
         <link rel="stylesheet" href="./css/header.css" />
         <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="./css/offcanvas_menu.css" />
         <!-- ICONS -->
         <script src="https://kit.fontawesome.com/10342158be.js" crossorigin="anonymous"></script>
         <!-- FONTS -->
@@ -31,110 +38,141 @@
     </head>
     <body>
         <header id="header">
-            <p class="nav-title p-1plus d-flex">
-                Varesva | Développeuse&nbsp<span class="d-lg-block ">Web</span><span class="d-xl-block ">&nbspet Web Mobile</span>
+            <p class="nav-title p-1plus d-flex" aria-label="Identité : Varesva. Profession : développeuse web et web mobile">
+                Varesva | Développeuse&nbsp;
+                <span class="d-lg-block ">
+                    Web
+                </span>
+                <span class="d-xl-block ">
+                    &nbsp;et Web Mobile
+                </span>
             </p>
-            <nav class="nav bg-container p-1plus w-lg-50 flex-end">
-                <div class="  ">
-                    <div class="d-sm-block">
+            <nav class="nav p-1plus bg-container w-lg-50 flex-end">
+                <div class="d-sm-block" aria-label="navigation : menu latéral">
+                    <div id="burgerMenu" onclick="openOffcanvasMenu()" title="Menu latéral" aria-label="Ouvrir le menu latéral">
                         <i class="fa-solid fa-xl fa-bars"></i>
                     </div>
-                    <div class="d-md-block">
-                        <ul class="nav-items">
-                            <li>
-                                <a href="#">Accueil</a>
-                            </li>
-                            <li class="d-xl-block">
-                                <a href="#">Qui suis-je ?</a>
-                            </li>
-                        </ul>
+                    <div id="offcanvasMenu" class="offcanvas">
+                        <span class="flex-end p-2">
+                            <a href="javascript:void(0)" onclick="closeMenu()" title="Fermer" aria-label="Fermer le menu">
+                                <i class="fa-solid fa-2xl fa-xmark"></i>
+                            </a>
+                        </span>
+                        <nav class="sp-nowrap">
+                            <ul class="nav-items">
+                                <li class="nav-item">
+                                    <a href="#">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Qui suis-je ?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
+                </div>
+                <div class="d-md-block">
+                    <ul class="nav-items" aria-label="navigation: menu principal">
+                        <li>
+                            <a href="#">Accueil</a>
+                        </li>
+                        <li class="d-lg-block">
+                            <a href="#">Qui suis-je ?</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
-        
-        <div id="container-global">
+        <div id="wrapper">
             <div id="container-xl">
-                <picture id="img-container-xl">
-                    <img src="./img/logo.gif" loading="lazy" alt="Logo Varesva - développement Web et Web Mobile" class="logo">
-                </picture>
+                <figure id="img-container-xl">
+                    <img src="./img/logo.gif" loading="lazy" alt="Logo Varesva -
+                        développement Web et Web Mobile - image format GIF" class="logo">
+                </figure>
             </div>
-            <div id="container">
-                <main> 
-                    <picture id="img-container">
-                        <img src="./img/logo.gif" loading="lazy" alt="Logo Varesva - développement Web et Web Mobile" class="logo">
-                    </picture>
+            <div id="container" class="bg-container">
+                <main id="content">
+                    <figure id="img-container">
+                        <img src="./img/logo.gif" loading="lazy" alt="Logo
+                            Varesva - développement Web et Web Mobile - image format GIF"
+                            class="logo">
+                    </figure>
+                    <h1>
+                        Justine <span class="sp-nowrap">TAVARES VAZ</span>
+                    </h1>
+                    <p>
+                        (alias
+                        <span class="h5 bolder">
+                            "Varesva"
+                        </span>)
+                    </p>
+                    <p class="h5">
+                        Développeuse Web Junior
+                    </p>
 
-                    <div id="content">
-                        <h1>Justine <br> TAVARES VAZ</h1>
-                        <p>
-                            (alias 
-                            <span class="h5 bolder">
-                                "Varesva"
-                            </span>)
-                        </p>
-                        <p class="h5">
-                            Développeuse Web Junior               
-                        </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn" type="button">
+                            Portfolio
+                        </a>
 
-                        <div class="btn-group">
-                            <a href="#" class="btn" type="button">
-                                Portfolio
-                            </a>
-                        
-                            <a href="#" type="button" class="btn">
-                                Projet(s) en cours
-                            </a>
-                        
-                            <a href="#" type="button" class="btn">
-                                Télécharger mon CV
-                            </a>
-        
-                            <a href="#" type="button" class="btn">
-                                Contact
-                            </a>
-                        </div>
-                        
-                        <ul class="socials">
-                            <li>
-                                <a href="https://github.com/Varesva">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://www.linkedin.com/in/justine-tavares-vaz-994963190">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/varesvaDev">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/_varesvadev/">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        <a href="#" type="button" class="btn">
+                            Projet(s) en cours
+                        </a>
+
+                        <a href="#" type="button" class="btn">
+                            Télécharger mon CV
+                        </a>
+
+                        <a href="#" type="button" class="btn">
+                            Contact
+                        </a>
                     </div>
+                    <ul class="socials">
+                        <li>
+                            <a href="https://github.com/Varesva" aria-label="Lien vers compte Github">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/in/justine-tavares-vaz-994963190" aria-label="Lien vers compte LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/varesvaDev" aria-label="Lien vers compte Twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/_varesvadev/" aria-label="Lien vers compte Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </main>
                 <footer id="footer">
                     <p class="copyright">
-                        Tous droits réservés - &copy <span id="year"></span>, <br class="d-sm-block">
-                        <!-- LIEN PORTFOLIO -->
-                        <a href="https:/www.varesva-dev.tech">
-                            Justine Tavares Vaz 
-                            <span class="text-small">(Portfolio)</span>
-                        </a>
-                        <br />
+                        <span class="mb-0 sp-nowrap">
+                            Tous droits réservés - &copy; <span id="year"></span>,&nbsp;
+                        </span>
+                        <span class="sp-nowrap">
+                            <!-- LIEN PORTFOLIO -->
+                            <a href="https:/www.varesva-dev.tech">
+                                Justine Tavares Vaz
+                                <span class="text-small">(Portfolio)</span>
+                            </a>
+                        </span>
+                    </p>
+                    <p>
                         <small>
-                            Fait avec passion &#128151; ! 
+                            Fait avec passion &#128151; !
                         </small>
                     </p>
                 </footer>
             </div>
         </div>
-        <script src="./script.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>

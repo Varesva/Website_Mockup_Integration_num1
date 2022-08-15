@@ -2,32 +2,33 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Nunito", sans-serif;
-}
-
-html,
-body,
-main,
-header,
-footer {
-	width: 100%;
 }
 
 html {
-	font-size: 100%; /*16px*/
+	font-size: 100%; /* 16px */
+	height: 100%;
 }
 
 body {
-	scroll-behavior: smooth;
-	color: #000000;
+	min-height: 100vh;
+}
+
+html,
+body {
+	width: 100%;
+}
+
+body {
+	font-family: "Nunito", sans-serif;
 	font-weight: 600;
-	height: 100%;
+	color: #000000;
 	background-image: url("../img/colored-7292420_1920.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	/* background-position: top; */
+	background-position: top;
 	--nav-height: 3rem;
+	scroll-behavior: smooth;
 }
 
 p,
@@ -43,13 +44,16 @@ li {
 	list-style-type: none;
 }
 
-a {
+a,
+#burgerMenu {
 	color: inherit;
 	text-decoration: none;
+	transition: ease-in-out 0.2s;
 }
 
-a:hover, .nav li:hover {
-	transform: scale(1.015rem);
+a:hover,
+#burgerMenu:hover,
+.nav li a:hover {
 	font-weight: 700;
 	color: #6551fe;
 }
@@ -94,8 +98,8 @@ small,
 	font-size: 0.875rem;
 }
 
-.boldless {
-	font-weight: 500;
+.sp-nowrap {
+	white-space: nowrap;
 }
 
 .bolder {
@@ -116,9 +120,17 @@ small,
 	padding: 1rem;
 }
 
+.p-2 {
+	padding: 2rem;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
 	h1 {
-		font-size: 3rem;
+		font-size: 3.2rem;
 		letter-spacing: 3px;
 	}
 
