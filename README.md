@@ -38,18 +38,17 @@ Du 12/08/2022 au 15/08/2022
 ### Aperçu
 #### Aperçus maquette
 * Version Desktop
-<img src="./img/ref_templates/desktop-template.png" width=200 height=180>
+![Multi - Responsive](./img/ref_templates/desktop-template.png)
 
 * Version Mobile
-<img src="./img/ref_templates/smartphone-template.png" width=200 height=180>
+<img src="./img/ref_templates/smartphone-template.png" width=600 height=300>
 
 
 #### Aperçus du site
-* ![Multi - Responsive](./img/ref_templates/live-check.png)
-<img src="./img/ref_templates/live-check.png" width=200 height=180>
+![Multi - Responsive](./img/ref_templates/live-check.png)
 
 * Vérification Google Search Console
-<img src="./img/ref_templates/responsive-check.png" width=150 height=120>
+<img src="./img/ref_templates/responsive-check.png" width=600 height=300>
 
 ## Outils
 
