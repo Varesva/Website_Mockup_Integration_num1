@@ -36,14 +36,20 @@ Du 12/08/2022 au 15/08/2022
 * Assurer une compatibilité du site avec les dernières versions des navigateurs web Chrome et Firefox
 
 ### Aperçu
-**Aperçus maquette**
-[Version Desktop](./img/ref_templates/desktop-template.png)
-[Version Mobile](./img/ref_templates/smartphone-template.png)
+#### Aperçus maquette
+* Version Desktop
+<img src="./img/ref_templates/desktop-template.png" width=200 height=180>
 
-**Aperçus du site**
-[Multi - Responsive](./img/ref_templates/live-check.png)
-[Vérification Google Search Console](./img/ref_templates/responsive-check.png)
+* Version Mobile
+<img src="./img/ref_templates/smartphone-template.png" width=200 height=180>
 
+
+#### Aperçus du site
+* ![Multi - Responsive](./img/ref_templates/live-check.png)
+<img src="./img/ref_templates/live-check.png" width=200 height=180>
+
+* Vérification Google Search Console
+<img src="./img/ref_templates/responsive-check.png" width=150 height=120>
 
 ## Outils
 
