@@ -9,7 +9,7 @@ Projet personnel : Exercice d'intégration HTML n°1.
 
 3. Outils
 
-4. Apercus
+4. Aperçus
 
 5. Crédits
 
